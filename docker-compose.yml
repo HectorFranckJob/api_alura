@@ -1,0 +1,14 @@
+services:
+  app:
+    # Constrói a imagem a partir do Dockerfile no diretório atual.
+    # Corresponde ao seu Dockerfile para a aplicação Python/Uvicorn.
+    build: .
+    container_name: api-alura
+    ports:
+      # Mapeia a porta 8000 do host para a porta 8000 do contêiner,
+      # conforme definido no seu Dockerfile.
+      - "8000:8000"
+    volumes:
+      # Monta o código-fonte local no diretório de trabalho do contêiner.
+      # Isso permite o hot-reloading com o Uvicorn (--reload).
+      - .:/app
