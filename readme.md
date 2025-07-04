@@ -44,7 +44,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
    Aqui você pode testar todos os endpoints da API de forma interativa.
-
+git
 ---
 
 ## Autenticando no Google Cloud
